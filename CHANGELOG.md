@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.1 (2019-03-27)
+
+* Forked from pmuller/ipset
+* Added "purge" option to params
+* Made read-write permissions stricter on config directory (0640)
+
 ## 0.6.0 (2018-03-13)
 
 * Support Puppet 4 and Puppet 5
