@@ -4,6 +4,8 @@
 #   Defaults to the Linux distribution default.
 class ipset::params (
   Optional[Enum['iptables', 'firewalld']] $use_firewall_service = undef,
+  Enum['latest','present'] $package_ensure = 'latest',
+  Optional[Enum['true', 'false']] $config_purge_set = undef,
 ) {
   $package = $facts['os']['family'] ? {
     'RedHat' => 'ipset',
