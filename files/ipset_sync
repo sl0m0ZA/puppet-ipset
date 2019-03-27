@@ -63,6 +63,7 @@ function construct_ipset_dump() {
       #   * empty lines
       # * cleanup
       #   * network mask suffix in complete IP (IPv4=32, IPv6=128)
+      #   * remove inline comments
       #   * trim whitespaces
       cat "${f_content}" | \
         grep -v '^[[:space:]]*#' | \
@@ -70,6 +71,7 @@ function construct_ipset_dump() {
         sed -re 's@^[[:space:]]*@@' | \
         sed -re 's@[[:space:]]*$@@' | \
         sed -re 's@/((32)|(128))$@@' | \
+        sed -re 's@[[:space:]]*#.*$@@' | \
         sed -re "s/(.*)/add ${alias} \\1/" | \
         LC_ALL=C sort --unique
     fi

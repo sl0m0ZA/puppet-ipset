@@ -57,6 +57,26 @@ simple_test_cases = [
     'file url',
     'file:///foo/bar',
     { source: '/foo/bar' }
+  ],
+  [
+    'array',
+    ['10.0.0.1 #Comment 1', '192.168.0.1 #Comment 2'],
+    { content: "10.0.0.1 #Comment 1\n192.168.0.1 #Comment 2" }
+  ],
+  [
+    'array',
+    ['10.0.0.1,80', '192.168.0.1,443'],
+    { content: "10.0.0.1,80\n192.168.0.1,443" }
+  ],
+  [
+    'string',
+    ["10.0.0.1 #Comment 1\n192.168.0.1 #Comment 2"],
+    { content: "10.0.0.1 #Comment 1\n192.168.0.1 #Comment 2" }
+  ],
+  [
+    'string',
+    ["10.0.0.1,80\n192.168.0.1,443"],
+    { content: "10.0.0.1,80\n192.168.0.1,443" }  
   ]
 ]
 
