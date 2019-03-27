@@ -60,6 +60,9 @@ define ipset (
     # header
     file { "${::ipset::params::config_path}/${title}.hdr":
       ensure  => file,
+      owner   => 'root',
+      group   => 'root',
+      mode    => '0640',
       content => "create ${title} ${type} ${opt_string}\n",
       notify  => Exec["sync_ipset_${title}"],
     }
@@ -70,6 +73,9 @@ define ipset (
         # create file with ipset, one record per line
         file { "${::ipset::params::config_path}/${title}.set":
           ensure  => file,
+          owner   => 'root',
+          group   => 'root',
+          mode    => '0640',
           content => inline_template('<%= (@set.map { |i| i.to_s }).join("\n") %>'),
         }
       }
@@ -77,6 +83,9 @@ define ipset (
         # passed as puppet file
         file { "${::ipset::params::config_path}/${title}.set":
           ensure => file,
+          owner  => 'root',
+          group  => 'root',
+           mode  => '0640',
           source => $set,
         }
       }
@@ -84,6 +93,9 @@ define ipset (
         # passed as target node file
         file { "${::ipset::params::config_path}/${title}.set":
           ensure => file,
+          owner  => 'root',
+          group  => 'root',
+          mode   => '0640',
           source => regsubst($set, '^.{7}', ''),
         }
       }
@@ -91,6 +103,9 @@ define ipset (
         # passed directly as content string (from template for example)
         file { "${::ipset::params::config_path}/${title}.set":
           ensure  => file,
+          owner   => 'root',
+          group   => 'root',
+          mode    => '0640',
           content => $set,
         }
       }

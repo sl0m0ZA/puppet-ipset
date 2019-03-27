@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.3 (2019-03-27)
+
+* Added permission 0640 for ipset *.hdr and *.set files
+
 ## 0.6.2 (2019-03-27)
  
 * Incorporated suggested changes from pmuller contributors listed below
