@@ -1,8 +1,7 @@
-os:
-  family: RedHat
-  release:
-    major: '7'
-# Puppet still partly relies on legacy facts
-# See https://tickets.puppetlabs.com/browse/PUP-8543
-osfamily: RedHat
-operatingsystem: CentOS
+# Use default_module_facts.yml for module specific facts.
+#
+# Facts specified here will override the values provided by rspec-puppet-facts.
+---
+ipaddress: "172.16.254.254"
+is_pe: false
+macaddress: "AA:AA:AA:AA:AA:AA"
