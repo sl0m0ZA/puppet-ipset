@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.2 (2019-03-27)
+ 
+* Incorporated suggested changes from pmuller contributors listed below
+* ipset version can be pinned via params
+* Dependancy on thrnio/ip removed as puppet includes it in stdlib
+* Added rest of hash types
+* Documented support for Debian/Ubuntu OS as tested
+
 ## 0.6.1 (2019-03-27)
 
 * Forked from pmuller/ipset

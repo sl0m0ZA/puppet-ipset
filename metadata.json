@@ -1,6 +1,6 @@
 {
   "name": "sl0m0-ipset",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "author": "Evan Booyens",
   "summary": "Linux IP sets management",
   "license": "Apache-2.0",
