@@ -1,18 +1,18 @@
 {
-  "name": "pmuller-ipset",
-  "version": "0.6.0",
-  "author": "Philippe Muller",
+  "name": "sl0m0-ipset",
+  "version": "0.6.1",
+  "author": "Evan Booyens",
   "summary": "Linux IP sets management",
   "license": "Apache-2.0",
-  "source": "https://github.com/pmuller/puppet-ipset",
+  "source": "https://github.com/sl0m0ZA/puppet-ipset",
   "tags": [
     "ipset",
     "linux",
     "firewall",
     "iptables"
   ],
-  "issues_url": "https://github.com/pmuller/puppet-ipset/issues",
-  "project_page": "https://github.com/pmuller/puppet-ipset",
+  "issues_url": "https://github.com/sl0m0ZA/puppet-ipset/issues",
+  "project_page": "https://github.com/sl0m0ZA/puppet-ipset",
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",

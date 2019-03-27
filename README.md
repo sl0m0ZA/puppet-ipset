@@ -1,9 +1,5 @@
 # ipset
 
-[![Puppet Forge](http://img.shields.io/puppetforge/v/pmuller/ipset.svg)](https://forge.puppetlabs.com/pmuller/ipset)
-[![Puppet Forge downloads](https://img.shields.io/puppetforge/dt/pmuller/ipset.svg)](https://forge.puppetlabs.com/pmuller/ipset)
-[![Build Status](https://travis-ci.org/pmuller/puppet-ipset.svg)](https://travis-ci.org/pmuller/puppet-ipset)
-
 #### Table of Contents
 
 1. [Overview](#overview)
@@ -82,23 +78,24 @@ file { '/tmp/bar_set_content':
 
 ## Reference
 
-* [Module reference](https://github.com/pmuller/puppet-ipset/blob/master/doc/reference.md)
+* [Module reference](https://github.com/sl0m0ZA/puppet-ipset/blob/master/doc/reference.md)
 * [ipset man page](https://linux.die.net/man/8/ipset)
 
 ## Limitations
 
-* Only tested on RedHat-like Linux distributions
+* Tested on Debian and RedHat-like Linux distributions
 * IPv6 sets have not been tested yet
 
 ## Changelog
 
-See [CHANGELOG](https://github.com/pmuller/puppet-ipset/blob/master/CHANGELOG.md)
+See [CHANGELOG](https://github.com/sl0m0ZA/puppet-ipset/blob/master/CHANGELOG.md)
 
 ## Development
 
-See [development](https://github.com/pmuller/puppet-ipset/blob/master/doc/development.md)
+See [development](https://github.com/sl0m0ZA/puppet-ipset/blob/master/doc/development.md)
 
 ## Thanks
 
-This module is a fork of [mighq/ipset](https://github.com/mighq/puppet-ipset),
+This module is a fork of [pmuller/ipset](https://forge.puppet.com/pmuller/ipset),
+which was forked from [mighq/ipset](https://github.com/mighq/puppet-ipset),
 which was based on [thias/ipset](https://github.com/thias/puppet-ipset).
