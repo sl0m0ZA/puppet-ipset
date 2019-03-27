@@ -16,6 +16,12 @@ class ipset::params (
     default  => '/etc/ipset.d',
   }
 
+  if $config_purge_set {
+    $config_purge = $config_purge_set
+  } else {
+    $config_purge = true
+  }
+      
   if $use_firewall_service {
     # use specified override
     $firewall_service = $use_firewall_service

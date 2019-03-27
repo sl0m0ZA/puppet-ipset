@@ -5,8 +5,9 @@
 class ipset::install {
   include ipset::params
 
-  $cfg = $::ipset::params::config_path
-
+  $cfg       = $::ipset::params::config_path
+  $cfg_purge = $::ipset::params::config_purge
+  
   # main package
   package { $::ipset::params::package:
     ensure => 'latest',
@@ -15,7 +16,12 @@ class ipset::install {
 
   # directory with config profiles (*.set & *.hdr files)
   file { $cfg:
-    ensure => directory,
+    ensure  => directory,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0640',
+    purge   => "${cfg_purge}",
+    recurse => true,
   }
 
   # helper scripts
