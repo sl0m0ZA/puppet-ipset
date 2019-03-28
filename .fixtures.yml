@@ -2,7 +2,4 @@ fixtures:
   forge_modules:
     stdlib:
       repo: 'puppetlabs/stdlib'
-      ref: '4.24.0'
-    ip:
-      repo: 'thrnio/ip'
-      ref: '1.0.1'
+      ref: '4.25.0'
