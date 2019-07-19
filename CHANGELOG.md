@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.5 (2019-03-27)
+
+* Added support for SuSE Linux Enterprise Server (SLES) 12 and 15
+
 ## 0.6.3 (2019-03-27)
 
 * Added permission 0640 for ipset *.hdr and *.set files

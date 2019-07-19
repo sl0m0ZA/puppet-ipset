@@ -1,6 +1,6 @@
 {
   "name": "sl0m0-ipset",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "author": "Evan Booyens",
   "summary": "Linux IP sets management",
   "license": "Apache-2.0",
@@ -47,6 +47,13 @@
       "operatingsystemrelease": [
         "6",
         "7"
+      ]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [
+        "12",
+        "15"
       ]
     }
   ],
